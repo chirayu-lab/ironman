@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home | Stark Industries</title>
+  <link rel="icon" type="image/png" href="ironman.png">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;800&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Orbitron', sans-serif;
+      background: radial-gradient(circle at 30% 30%, #111, #000);
+      background-image: url("backgroundimage.jpg");
+      background-size: cover;
+      background-position: center;
+      color: white;
+      overflow-x: hidden;
+    }
+
+    header {
+      text-align: center;
+      padding: 50px 20px;
+      background: rgba(0, 0, 0, 0.75);
+      box-shadow: 0 0 25px rgba(255, 0, 0, 0.7);
+    }
+
+    h1 {
+      font-size: 70px;
+      background: linear-gradient(to right, #ff0000, #ffcc00);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-transform: uppercase;
+      letter-spacing: 5px;
+      animation: glow 2s infinite alternate;
+    }
+
+    @keyframes glow {
+      from { text-shadow: 0 0 10px #ff0000, 0 0 30px #ff6600; }
+      to { text-shadow: 0 0 25px #ffcc00, 0 0 50px #ff0000; }
+    }
+
+    nav {
+      margin-top: 25px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #fff;
+      padding: 12px 25px;
+      margin: 10px;
+      font-size: 18px;
+      border: 2px solid #ffcc00;
+      border-radius: 25px;
+      transition: all 0.3s ease;
+      background: rgba(255, 0, 0, 0.1);
+    }
+
+    nav a:hover {
+      background: linear-gradient(to right, #ff0000, #ffcc00);
+      color: #000;
+      box-shadow: 0 0 25px #ff6600;
+      transform: scale(1.1);
+    }
+
+    main {
+      text-align: center;
+      padding: 80px 20px;
+      background: rgba(0, 0, 0, 0.7);
+    }
+
+    main img {
+      width: 300px;
+      border-radius: 20px;
+      border: 3px solid #ffcc00;
+      box-shadow: 0 0 25px #ff0000;
+      transition: transform 0.4s;
+    }
+
+    main img:hover {
+      transform: scale(1.1);
+      box-shadow: 0 0 45px #ffcc00;
+    }
+
+    h2 {
+      color: #00ffff;
+      margin-top: 50px;
+      font-size: 28px;
+      text-shadow: 0 0 15px #00ffff;
+    }
+
+    p {
+      margin: 20px auto;
+      font-size: 18px;
+      max-width: 700px;
+      color: #e6e6e6;
+      line-height: 1.7;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      color: #ffcc00;
+      background: rgba(10, 10, 10, 0.9);
+      border-top: 2px solid #ff0000;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Stark Industries</h1>
+    <nav>
+      <a href="home.html">Home</a>
+      <a href="ironman.html">Iron Man</a>
+      <a href="services.html">Services</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="jarvis.html">J.A.R.V.I.S</a>
+    </nav>
+  </header>
+
+  <main>
+    <img src="arc.jpg" alt="Iron Man Arc Reactor">
+    <h2>Welcome to Stark Industries</h2>
+    <p>
+      Step into the world of innovation, technology, and heroism. Stark Industries stands as a beacon of futuristic engineering and AI advancements. 
+      Led by Tony Stark — visionary, genius, and Iron Man — our mission is to shape tomorrow with power, precision, and passion.
+    </p>
+    <p>
+      Explore our technologies, learn about Iron Man’s suits, and join the future of intelligent defense systems.  
+      The next generation of heroes begins here.
+    </p>
+  </main>
+
+  <footer>
+    © 2025 Stark Industries | Powered by Arc Reactor ⚡
+  </footer>
+</body>
+</html>

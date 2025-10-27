@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IRON MAN</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+
+    <style>
+        * {
+            margin: 0; padding: 0; box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Orbitron', sans-serif;
+            background: radial-gradient(circle at 20% 20%, #1a1a1a, #000);
+            color: #fff;
+            background-image: url("backgroundimage.jpg");
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+            overflow-x: hidden;
+        }
+
+        header {
+            text-align: center;
+            padding: 60px 20px 30px;
+            background: rgba(0, 0, 0, 0.75);
+            box-shadow: 0 0 25px rgba(255, 0, 0, 0.6);
+        }
+
+        nav {
+            margin-top: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #ffcc00;
+            margin: 0 15px;
+            font-size: 18px;
+            padding: 10px 15px;
+            border: 1px solid #ff0000;
+            border-radius: 10px;
+            transition: all 0.3s ease;
+            box-shadow: 0 0 10px #ff0000;
+        }
+
+        nav a:hover {
+            background: linear-gradient(90deg, #ff0000, #ffcc00);
+            color: #000;
+            box-shadow: 0 0 25px #ffcc00;
+        }
+
+        .ironman {
+            font-size: 80px;
+            font-weight: bold;
+            background: linear-gradient(to right, #ff0000, #ffcc00);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-transform: uppercase;
+            text-shadow: 0 0 20px #ff0000;
+            animation: glow 2s infinite alternate;
+        }
+
+        @keyframes glow {
+            from { text-shadow: 0 0 10px #ff0000, 0 0 30px #ff6600; }
+            to { text-shadow: 0 0 25px #ffcc00, 0 0 50px #ff0000; }
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 30px;
+            padding: 50px;
+            background: rgba(0, 0, 0, 0.7);
+        }
+
+        .armor-img {
+            width: 350px;
+            border-radius: 20px;
+            border: 3px solid #ffcc00;
+            box-shadow: 0 0 20px #ff0000;
+            transition: transform 0.4s, box-shadow 0.4s;
+        }
+
+        .armor-img:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 40px #ff6600;
+        }
+
+        .Functions {
+            font-size: 30px;
+            color: #00ffff;
+            margin-top: 40px;
+            text-shadow: 0 0 10px #00ffff;
+        }
+
+        ul {
+            list-style: none;
+            margin-top: 20px;
+            width: 60%;
+        }
+
+        .points {
+            background: linear-gradient(90deg, rgba(255,0,0,0.8), rgba(255,230,0,0.8));
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 15px;
+            font-size: 18px;
+            box-shadow: 0 0 15px #ff0000;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(5px);
+        }
+
+        .points:hover {
+            background: linear-gradient(90deg, rgba(255,230,0,0.9), rgba(255,0,0,0.9));
+            transform: scale(1.05);
+            box-shadow: 0 0 30px #ffcc00;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            color: #00ffff;
+            font-size: 18px;
+            background: rgba(10, 10, 10, 0.85);
+            border-top: 2px solid #ff0000;
+        }
+
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: linear-gradient(#ff0000, #ffcc00);
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1><a class="ironman">IRON MAN</a></h1>
+        <h2>Robert Downey Jr. as Iron Man</h2>
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="suit.html">Suit</a>
+            <a href="weapons.html">Weapons</a>
+            <a href="jarvis.html">J.A.R.V.I.S</a>
+            <a href="gallery.html">Gallery</a>
+        </nav>
+    </header>
+
+    <main>
+        <img src="tony.jpg" alt="Iron Man Armor" class="armor-img">
+
+        <h2 class="Functions">Functions:</h2>
+        <ul>
+            <li class="points">Advanced powered armor suit designed by Tony Stark.</li>
+            <li class="points">Equipped with repulsor beams, missiles, and flight systems.</li>
+            <li class="points">AI assistance through J.A.R.V.I.S. and F.R.I.D.A.Y.</li>
+            <li class="points">Enhanced strength, durability, and energy projection.</li>
+            <li class="points">Core member of The Avengers, protector of Earth.</li>
+        </ul>
+    </main>
+
+    <footer>
+        © Stark Industries | Designed by Tony Stark’s AI Interface
+    </footer>
+</body>
+</html>

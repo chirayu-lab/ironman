@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Stark Industries</title>
+  <link rel="icon" type="image/png" href="ironman.png">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Orbitron', sans-serif;
+      background: radial-gradient(circle at top left, #050505, #000);
+      background-image: url('backgroundimage.jpg');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      color: #fff;
+    }
+
+    header {
+      text-align: center;
+      padding: 60px 20px;
+      background: rgba(0, 0, 0, 0.7);
+      box-shadow: 0 0 25px #ff0000;
+    }
+
+    h1 {
+      font-size: 55px;
+      background: linear-gradient(to right, #ff0000, #ffcc00);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      text-shadow: 0 0 20px #ff6600;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: white;
+      padding: 10px 20px;
+      margin: 10px;
+      border: 2px solid #ffcc00;
+      border-radius: 25px;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      background: linear-gradient(to right, #ff0000, #ffcc00);
+      color: black;
+      transform: scale(1.1);
+      box-shadow: 0 0 25px #ff6600;
+    }
+
+    main {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 60px;
+      background: rgba(0, 0, 0, 0.75);
+    }
+
+    form {
+      background: rgba(20, 20, 20, 0.85);
+      border: 2px solid #ffcc00;
+      border-radius: 20px;
+      padding: 40px;
+      width: 400px;
+      box-shadow: 0 0 25px rgba(255, 0, 0, 0.5);
+    }
+
+    label {
+      display: block;
+      font-size: 16px;
+      margin-bottom: 8px;
+      color: #ffcc00;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      border-radius: 10px;
+      border: none;
+      margin-bottom: 20px;
+      font-family: 'Orbitron', sans-serif;
+    }
+
+    button {
+      background: linear-gradient(to right, #ff0000, #ffcc00);
+      border: none;
+      padding: 12px 25px;
+      border-radius: 25px;
+      color: black;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s;
+      width: 100%;
+      font-family: 'Orbitron', sans-serif;
+    }
+
+    button:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 20px #ff6600;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      color: #ffcc00;
+      background: rgba(10, 10, 10, 0.9);
+      border-top: 2px solid #ff0000;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>CONTACT STARK INDUSTRIES</h1>
+    <nav>
+      <a href="home.html">Home</a>
+      <a href="ironman.html">Iron Man</a>
+      <a href="suit.html">Suits</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="jarvis.html">J.A.R.V.I.S</a>
+    </nav>
+  </header>
+
+  <main>
+    <form>
+      <label for="name">Your Name</label>
+      <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+      <label for="message">Your Message</label>
+      <textarea id="message" name="message" rows="5" placeholder="Write your message here..."></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+  </main>
+
+  <footer>
+    © 2025 Stark Industries | “Proof That Tony Stark Has a Heart”
+  </footer>
+</body>
+</html>

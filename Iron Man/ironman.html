@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Iron Man | Tony Stark</title>
+  <link rel="icon" type="image/png" href="ironman.png">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Orbitron', sans-serif;
+      background: radial-gradient(circle at 20% 20%, #050505, #000);
+      color: white;
+      background-image: url('backgroundimage.jpg');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      overflow-x: hidden;
+    }
+
+    header {
+      text-align: center;
+      padding: 60px 20px;
+      background: rgba(0, 0, 0, 0.75);
+      box-shadow: 0 0 25px rgba(255, 0, 0, 0.7);
+    }
+
+    h1 {
+      font-size: 65px;
+      background: linear-gradient(to right, #ff0000, #ffcc00);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-transform: uppercase;
+      letter-spacing: 4px;
+      animation: glow 2s infinite alternate;
+    }
+
+    @keyframes glow {
+      from { text-shadow: 0 0 10px #ff0000, 0 0 30px #ff6600; }
+      to { text-shadow: 0 0 25px #ffcc00, 0 0 50px #ff0000; }
+    }
+
+    nav {
+      margin-top: 20px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #fff;
+      padding: 10px 20px;
+      margin: 5px;
+      border: 2px solid #ffcc00;
+      border-radius: 20px;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      background: linear-gradient(to right, #ff0000, #ffcc00);
+      color: black;
+      transform: scale(1.1);
+      box-shadow: 0 0 25px #ff6600;
+    }
+
+    main {
+      padding: 60px 20px;
+      background: rgba(0, 0, 0, 0.7);
+      text-align: center;
+    }
+
+    .intro {
+      max-width: 900px;
+      margin: 0 auto;
+      line-height: 1.7;
+      font-size: 18px;
+      background: rgba(20, 20, 20, 0.8);
+      border: 2px solid #ffcc00;
+      border-radius: 15px;
+      padding: 25px;
+      box-shadow: 0 0 30px rgba(255, 0, 0, 0.4);
+    }
+
+    .tony-img {
+      margin: 40px auto;
+      width: 320px;
+      border-radius: 20px;
+      border: 3px solid #ffcc00;
+      box-shadow: 0 0 40px rgba(255, 0, 0, 0.8);
+      transition: transform 0.4s ease;
+    }
+
+    .tony-img:hover {
+      transform: scale(1.08);
+    }
+
+    h2 {
+      font-size: 40px;
+      margin-top: 40px;
+      color: #ffcc00;
+      text-shadow: 0 0 20px #ff6600;
+    }
+
+    .abilities {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 25px;
+      margin-top: 40px;
+    }
+
+    .ability {
+      background: rgba(20, 20, 20, 0.85);
+      border: 2px solid #ffcc00;
+      border-radius: 20px;
+      padding: 25px;
+      width: 280px;
+      transition: 0.3s;
+      box-shadow: 0 0 25px rgba(255, 0, 0, 0.4);
+    }
+
+    .ability:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 0 35px rgba(255, 204, 0, 0.8);
+      background: rgba(30, 30, 30, 0.9);
+    }
+
+    .ability h3 {
+      color: #ffcc00;
+      margin-bottom: 10px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 25px;
+      color: #ffcc00;
+      background: rgba(10, 10, 10, 0.9);
+      border-top: 2px solid #ff0000;
+      margin-top: 60px;
+    }
+
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>IRON MAN</h1>
+    <nav>
+      <a href="home.html">Home</a>
+      <a href="ironman.html">Iron Man</a>
+      <a href="suit.html">Suits</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="jarvis.html">J.A.R.V.I.S</a>
+    </nav>
+  </header>
+
+  <main>
+    <img src="tony.jpg" alt="Tony Stark" class="tony-img">
+
+    <div class="intro">
+      <p><b>Tony Stark</b> — billionaire, genius, playboy, philanthropist — became <b>Iron Man</b> after building a powerful suit of armor to escape captivity. What started as survival soon evolved into a mission to protect humanity. Combining cutting-edge technology, artificial intelligence, and heart, he redefined the idea of a hero.</p>
+      <p>His legacy isn’t just the armor — it’s the belief that anyone can change the world through innovation and courage.</p>
+    </div>
+
+    <h2>Abilities & Technology</h2>
+
+    <div class="abilities">
+      <div class="ability">
+        <h3>Powered Armor Suit</h3>
+        <p>Provides flight, enhanced strength, durability, and advanced weaponry powered by the Arc Reactor.</p>
+      </div>
+      <div class="ability">
+        <h3>Artificial Intelligence</h3>
+        <p>Integrated AIs like J.A.R.V.I.S. and F.R.I.D.A.Y. enhance targeting, diagnostics, and real-time strategy.</p>
+      </div>
+      <div class="ability">
+        <h3>Nanotech Integration</h3>
+        <p>Allows instant armor deployment and morphing of weapons directly from Tony’s body interface.</p>
+      </div>
+      <div class="ability">
+        <h3>Genius Intellect</h3>
+        <p>Tony’s unmatched engineering and scientific brilliance powers every innovation Stark Industries creates.</p>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    © 2025 Stark Industries | Designed for Heroes ⚡
+  </footer>
+</body>
+</html>

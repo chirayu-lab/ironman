@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>J.A.R.V.I.S - Stark AI</title>
+  <link rel="icon" type="image/png" href="favicon.png">
+
+  <style>
+    body {
+      background: radial-gradient(circle at 20% 20%, #0d0d0d, #000);
+      font-family: 'Orbitron', sans-serif;
+      color: #00ffff;
+      overflow-x: hidden;
+      background-image: url("backgroundimage.jpg");
+      background-size: cover;
+      background-attachment: fixed;
+    }
+
+    header {
+      text-align: center;
+      padding: 40px;
+      background: rgba(0, 0, 0, 0.7);
+      border-bottom: 2px solid #00ffff;
+      box-shadow: 0 0 25px #00ffff;
+    }
+
+    .jarvis-title {
+      font-size: 60px;
+      background: linear-gradient(90deg, #00ffff, #ff0000);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-shadow: 0 0 25px #00ffff;
+      animation: glow 2s infinite alternate;
+    }
+
+    @keyframes glow {
+      from { text-shadow: 0 0 10px #00ffff, 0 0 30px #ff0000; }
+      to { text-shadow: 0 0 25px #ff0000, 0 0 50px #00ffff; }
+    }
+
+    .chat-container {
+      width: 80%;
+      max-width: 600px;
+      margin: 50px auto;
+      background: rgba(0, 0, 0, 0.75);
+      border: 2px solid #00ffff;
+      border-radius: 20px;
+      padding: 25px;
+      box-shadow: 0 0 40px #00ffff;
+    }
+
+    #chat-box {
+      height: 400px;
+      overflow-y: auto;
+      padding: 10px;
+      font-size: 16px;
+      border: 1px solid #00ffff;
+      border-radius: 10px;
+      margin-bottom: 15px;
+      background: rgba(0, 0, 0, 0.6);
+    }
+
+    .user-msg {
+      color: #ffcc00;
+      margin: 8px 0;
+    }
+
+    .ai-msg {
+      color: #00ffff;
+      margin: 8px 0;
+    }
+
+    #user-input {
+      width: 75%;
+      padding: 10px;
+      border: none;
+      border-radius: 10px;
+      font-size: 16px;
+      background: rgba(0,0,0,0.6);
+      color: white;
+      border: 1px solid #00ffff;
+    }
+
+    #send-btn {
+      width: 20%;
+      padding: 10px;
+      background: linear-gradient(90deg, #00ffff, #ff0000);
+      border: none;
+      border-radius: 10px;
+      color: #000;
+      cursor: pointer;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    #send-btn:hover {
+      background: linear-gradient(90deg, #ff0000, #00ffff);
+      box-shadow: 0 0 15px #ff0000;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      font-size: 18px;
+      color: #00ffff;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1 class="jarvis-title">J.A.R.V.I.S ONLINE</h1>
+    <p>Just A Rather Very Intelligent System</p>
+  </header>
+
+  <main>
+    <div class="chat-container">
+      <div id="chat-box"></div>
+      <input type="text" id="user-input" placeholder="Speak your command, Sir...">
+      <button id="send-btn">Send</button>
+    </div>
+  </main>
+
+  <footer>
+    © Stark Industries | Powered by OpenAI
+  </footer>
+
+  <script src="jarvis.js"></script>
+</body>
+</html>
